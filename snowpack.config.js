@@ -4,9 +4,7 @@ module.exports = {
     public: '/',
     src: '/dist',
   },
-  plugins: [
-    /* ... */
-  ],
+  plugins: ['@snowpack/plugin-react-refresh'],
   install: [
     /* ... */
   ],
