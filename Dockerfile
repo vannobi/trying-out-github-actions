@@ -14,6 +14,8 @@ RUN yarn build
 
 FROM nginx:1.17-alpine
 
+EXPOSE 80
+
 COPY --from=build /app/build /usr/share/nginx/html
 
-HEALTHCHECK CMD wget -q -O /dev/null http://localhost || exit 1
+# HEALTHCHECK CMD wget -q -O /dev/null http://localhost || exit 1
