@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  github_actions:
+    build:
+      context: .
+    container_name: github_actions
+    ports:
+      - '6800:80'
+    restart: on-failure
+    healthcheck:
+      disable: true
