@@ -6,7 +6,7 @@ services:
       context: .
     container_name: github_actions
     ports:
-      - '6800:80'
+      - '80:80'
     restart: on-failure
     healthcheck:
       disable: true
